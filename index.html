@@ -1,1 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Decade of Impact | MDTP Stakeholder Review</title>
+  <meta name="description" content="A Decade of Impact — MDTP podcast stakeholder review page with full episode and chapter-based viewing." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!--
+    ASSET PATHS (DO NOT RENAME)
+    Root folders:
+      /hero/hero-01.jpg ... /hero/hero-06.jpg
+      /thumbnails/ep-01.jpg ... /thumbnails/ep-08.jpg
+      /merch/teaching-is-dope-tee.jpg , /merch/teaching-is-dope-flat.png
+
+    Logos live at:
+      /assets/mdtp-logo2.svg
+      /assets/mdtp-logo.png
+      /assets/decade-logo.png
+      /assets/decade-logo-2.png
+  -->
+
+  <header class="siteHeader">
+    <div class="headerInner">
+      <a class="brand" href="#top" aria-label="A Decade of Impact Home">
+        <img class="brandMark" src="./assets/decade-logo.png" alt="A Decade of Impact logo" />
+      </a>
+
+      <nav class="headerNav" aria-label="Page navigation">
+        <a class="navLink" href="#watch">Watch Full</a>
+        <a class="navLink" href="#episodes">Episodes</a>
+        <a class="navLink" href="#support">Support</a>
+      </nav>
+
+      <div class="headerRight">
+        <div class="tagPill">Stakeholder Review</div>
+        <a class="btn btnPrimary" href="https://youtu.be/8XJr7USptS8" target="_blank" rel="noreferrer">
+          Open on YouTube
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero slideshow">
+      <div class="heroMedia" id="heroMedia"
+        data-hero='[
+          "./hero/hero-01.jpg",
+          "./hero/hero-02.jpg",
+          "./hero/hero-03.jpg",
+          "./hero/hero-04.jpg",
+          "./hero/hero-05.jpg",
+          "./hero/hero-06.jpg"
+        ]'>
+        <!-- script.js will load/rotate slides -->
+        <div class="heroOverlay" aria-hidden="true"></div>
+
+        <div class="heroContent">
+          <div class="heroKicker">
+            <img class="mdtpMark" src="./assets/mdtp-logo2.svg" alt="Million Dollar Teacher Project" />
+          </div>
+
+          <h1 class="heroTitle">A Decade of Impact</h1>
+          <p class="heroSub">
+            Presented by the <strong>Million Dollar Teacher Project</strong>
+          </p>
+
+          <div class="heroCtas">
+            <a class="btn btnPrimary" href="#watch">Watch Full (56 min)</a>
+            <a class="btn btnGhost" href="#episodes">Jump to Episodes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TITLE + SPEAKERS -->
+    <section class="container">
+      <section class="titleBlock" aria-label="Title and speakers">
+        <h2 class="pageTitle">Teachers Reflect on What Changed, What Didn’t, and What Still Matters</h2>
+
+        <div class="speakerGrid" role="list" aria-label="Speakers">
+          <div class="speakerCard" role="listitem">
+            <div class="speakerRole">Hosted by</div>
+            <div class="speakerName">Kashuna Hopkins</div>
+            <div class="speakerMeta">Host | Million Dollar Teacher Project</div>
+          </div>
+
+          <div class="speakerCard" role="listitem">
+            <div class="speakerRole">Featuring</div>
+            <div class="speakerName">Kimberly Ferm</div>
+            <div class="speakerMeta">Retired Educator | MDTP Partner</div>
+          </div>
+
+          <div class="speakerCard" role="listitem">
+            <div class="speakerRole">Featuring</div>
+            <div class="speakerName">Bridget Larkin</div>
+            <div class="speakerMeta">Retired Educator | MDTP Thought Partner</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESCRIPTION -->
+      <section class="descriptionBlock" aria-label="Purpose and description">
+        <p>
+          In celebration of a decade of service, the Million Dollar Teacher Project sits down with retired Arizona
+          educators to reflect on the realities of teaching, the evolution of education, and the human impact behind the profession.
+          This page is designed for partners, funders, and stakeholders to review the full conversation or jump to key themes.
+        </p>
+      </section>
+    </section>
+
+    <!-- WATCH FULL -->
+    <section class="container" id="watch" aria-label="Watch full podcast">
+      <div class="sectionHeader">
+        <h3>Watch the Full Conversation <span class="muted">(56 minutes)</span></h3>
+        <div class="sectionActions">
+          <div class="hintPill">Chapters available below</div>
+          <a class="btn btnGhost" href="https://youtu.be/8XJr7USptS8" target="_blank" rel="noreferrer">Open in YouTube</a>
+        </div>
+      </div>
+
+      <div class="playerCard">
+        <div class="playerWrap">
+          <iframe
+            id="ytPlayer"
+            title="A Decade of Impact — Full Podcast"
+            src="https://www.youtube.com/embed/8XJr7USptS8?rel=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="playerMeta">
+          <div class="metaRow">
+            <span class="metaLabel">Tip:</span>
+            <span class="metaValue">Click an episode below to jump to the exact timestamp.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EPISODES -->
+    <section class="container" id="episodes" aria-label="Episodes and chapters">
+      <div class="sectionHeader">
+        <h3>Episodes <span class="muted">(chapters)</span></h3>
+        <div class="sectionActions">
+          <button class="btn btnGhost" id="scrollLeft" type="button" aria-label="Scroll episodes left">◀</button>
+          <button class="btn btnGhost" id="scrollRight" type="button" aria-label="Scroll episodes right">▶</button>
+        </div>
+      </div>
+
+      <!--
+        Timestamps are in seconds; script.js will append ?start= to the embed.
+        Adjust later once final chapter timestamps are locked.
+      -->
+      <div class="episodeRail" id="episodeRail">
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="510"
+          aria-label="Play Episode 01 The Origin Stories">
+          <img class="episodeThumb" src="./thumbnails/ep-01.jpg" alt="Episode 01 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 01</span>
+              <span class="episodeTime">~8:30</span>
+            </div>
+            <div class="episodeTitle">The Origin Stories</div>
+            <div class="episodeDesc">How they entered teaching and the mentors who shaped the journey.</div>
+          </div>
+        </article>
+
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="960"
+          aria-label="Play Episode 02 More Than a Classroom">
+          <img class="episodeThumb" src="./thumbnails/ep-02.jpg" alt="Episode 02 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 02</span>
+              <span class="episodeTime">~16:00</span>
+            </div>
+            <div class="episodeTitle">More Than a Classroom</div>
+            <div class="episodeDesc">The emotional labor of teaching and showing up for students.</div>
+          </div>
+        </article>
+
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="1380"
+          aria-label="Play Episode 03 Encouragement Matters">
+          <img class="episodeThumb" src="./thumbnails/ep-03.jpg" alt="Episode 03 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 03</span>
+              <span class="episodeTime">~23:30</span>
+            </div>
+            <div class="episodeTitle">Encouragement Matters</div>
+            <div class="episodeDesc">Support systems, confidence, and what helps teachers thrive.</div>
+          </div>
+        </article>
+
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="1860"
+          aria-label="Play Episode 04 Connection First">
+          <img class="episodeThumb" src="./thumbnails/ep-04.jpg" alt="Episode 04 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 04</span>
+              <span class="episodeTime">~31:00</span>
+            </div>
+            <div class="episodeTitle">Connection First</div>
+            <div class="episodeDesc">Trust, relationships, and why connection comes before instruction.</div>
+          </div>
+        </article>
+
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="2480"
+          aria-label="Play Episode 05 AI and Education">
+          <img class="episodeThumb" src="./thumbnails/ep-05.jpg" alt="Episode 05 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 05</span>
+              <span class="episodeTime">~38:30</span>
+            </div>
+            <div class="episodeTitle">AI &amp; Education</div>
+            <div class="episodeDesc">Technology’s role and why the human line still matters most.</div>
+          </div>
+        </article>
+
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="2790"
+          aria-label="Play Episode 06 What Worked">
+          <img class="episodeThumb" src="./thumbnails/ep-06.jpg" alt="Episode 06 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 06</span>
+              <span class="episodeTime">~45:00</span>
+            </div>
+            <div class="episodeTitle">What Worked</div>
+            <div class="episodeDesc">Collaboration, alignment, and what genuinely moved education forward.</div>
+          </div>
+        </article>
+
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="3060"
+          aria-label="Play Episode 07 Beyond the Data">
+          <img class="episodeThumb" src="./thumbnails/ep-07.jpg" alt="Episode 07 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 07</span>
+              <span class="episodeTime">~51:00</span>
+            </div>
+            <div class="episodeTitle">Beyond the Data</div>
+            <div class="episodeDesc">When measurement replaced humanity—and what it cost teachers and kids.</div>
+          </div>
+        </article>
+
+        <article class="episodeCard" role="button" tabindex="0"
+          data-yt="8XJr7USptS8" data-start="3270"
+          aria-label="Play Episode 08 What Must Change">
+          <img class="episodeThumb" src="./thumbnails/ep-08.jpg" alt="Episode 08 thumbnail" />
+          <div class="episodeBody">
+            <div class="episodeTop">
+              <span class="episodeNum">EP 08</span>
+              <span class="episodeTime">~56:00</span>
+            </div>
+            <div class="episodeTitle">What Must Change</div>
+            <div class="episodeDesc">Respect, partnership, and what the next decade should prioritize.</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="episodeNote">
+        <span class="muted">
+          Note: chapter start times can be fine-tuned once the final transcript is consolidated and timestamps are verified.
+        </span>
+      </div>
+    </section>
+
+    <!-- SUPPORT / MERCH -->
+    <section class="container" id="support" aria-label="Support MDTP">
+      <div class="supportCard">
+        <div class="supportLeft">
+          <img class="supportImg" src="./merch/teaching-is-dope-tee.jpg" alt="Teaching is Dope shirt" />
+        </div>
+
+        <div class="supportRight">
+          <h3>Support MDTP</h3>
+          <p class="muted">
+            Kashuna is wearing the <strong>Teaching is Dope</strong> tax credit fundraising shirt.
+            Purchases support the work of the Million Dollar Teacher Project.
+          </p>
+
+          <div class="supportActions">
+            <a class="btn btnPrimary"
+              href="https://www.mdtpstore.org/product-page/teaching-is-dope-short-sleeve-tee"
+              target="_blank" rel="noreferrer">
+              View on MDTP Store
+            </a>
+            <a class="btn btnGhost" href="https://www.mdtproject.org/" target="_blank" rel="noreferrer">
+              Visit MDTP
+            </a>
+          </div>
+
+          <div class="supportMini">
+            <img class="supportMiniImg" src="./merch/teaching-is-dope-flat.png" alt="Teaching is Dope logo/flat graphic" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+    <div class="footerInner container">
+      <div class="footerLeft">
+        <img class="footerLogo" src="./assets/mdtp-logo.png" alt="Million Dollar Teacher Project logo" />
+        <div class="footerText">
+          <div class="footerTitle">Million Dollar Teacher Project</div>
+          <div class="footerMeta">A Decade of Impact — Stakeholder Review</div>
+        </div>
+      </div>
+
+      <div class="footerRight">
+        <a class="footerLink" href="https://www.mdtproject.org/" target="_blank" rel="noreferrer">mdtproject.org</a>
+        <span class="footerDot">•</span>
+        <a class="footerLink" href="https://youtu.be/8XJr7USptS8" target="_blank" rel="noreferrer">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
 
