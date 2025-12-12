@@ -1,0 +1,33 @@
+a-decade-podcast/
+  index.html
+  styles.css
+  script.js
+
+  assets/
+    logos/
+      mdtp-logo.svg
+      mdtp-logo.png
+      decade-logo.png
+      decade-logo-2.png
+
+    hero/
+      hero-01.jpg
+      hero-02.jpg
+      hero-03.jpg
+      hero-04.jpg
+      hero-05.jpg
+      hero-06.jpg
+
+    thumbnails/
+      ep-01.jpg
+      ep-02.jpg
+      ep-03.jpg
+      ep-04.jpg
+      ep-05.jpg
+      ep-06.jpg
+      ep-07.jpg
+      ep-08.jpg
+
+    merch/
+      teaching-is-dope-tee.jpg
+      teaching-is-dope-flat.png   (optional)
