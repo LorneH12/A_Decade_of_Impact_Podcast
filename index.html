@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>A Decade of Impact Podcast | MDTP Stakeholder Review</title>
+  <meta name="description" content="Stakeholder review page for A Decade of Impact Podcast — Million Dollar Teacher Project (MDTP)." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <div class="brand" aria-label="Site branding">
+        <!-- NOTE: user renamed mdtp-logo2.svg -->
+        <img class="brand__logo" src="assets/mdtp-logo2.svg" alt="Million Dollar Teacher Project logo" />
+        <div class="brand__text">
+          <p class="brand__org">Million Dollar Teacher Project</p>
+          <p class="brand__sub" id="brandSub">Stakeholder Review</p>
+        </div>
+      </div>
+
+      <div class="topbar__actions" role="group" aria-label="Site controls">
+        <button id="langToggle" class="btn btn--ghost" type="button" aria-pressed="false">
+          <span class="btn__icon" aria-hidden="true">🌐</span>
+          <span id="langToggleLabel">EN → ES</span>
+        </button>
+
+        <button id="themeToggle" class="btn btn--ghost" type="button" aria-pressed="false">
+          <span class="btn__icon" aria-hidden="true">🌓</span>
+          <span id="themeToggleLabel">Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Featured media">
+    <div class="hero__media" aria-label="Hero slideshow">
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__slides" id="heroSlides" aria-live="polite">
+        <!-- Slides injected by script.js -->
+      </div>
+
+      <div class="hero__controls">
+        <button id="heroPrev" class="icon-btn" type="button" aria-label="Previous slide">‹</button>
+        <button id="heroPlayPause" class="icon-btn" type="button" aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
+        <button id="heroNext" class="icon-btn" type="button" aria-label="Next slide">›</button>
+      </div>
+
+      <div class="hero__dots" id="heroDots" role="tablist" aria-label="Slide selection">
+        <!-- Dots injected by script.js -->
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__badges">
+          <img class="badge" src="assets/decade-logo.png" alt="A Decade of Impact logo" />
+          <img class="badge badge--alt" src="assets/decade-logo-2.png" alt="A Decade of Impact alternate logo" />
+        </div>
+
+        <h1 class="hero__title" id="pageTitle">A Decade of Impact: Education Conversation</h1>
+        <p class="hero__desc" id="pageDesc">
+          Host Kashuna Hopkins (MDTP) sits down with retired Arizona educators Bridget Larkin and Kimberly Fern to reflect on what has changed, what hasn’t, and what teachers need most.
+        </p>
+
+        <div class="hero__cta" role="group" aria-label="Primary actions">
+          <a class="btn btn--primary" href="#watch" id="jumpToWatch">
+            <span aria-hidden="true">▶</span>
+            <span id="watchFullBtn">Watch Full Podcast</span>
+          </a>
+
+          <a class="btn btn--secondary" href="#episodes" id="jumpToEpisodes">
+            <span aria-hidden="true">☰</span>
+            <span id="watchChaptersBtn">Watch by Chapters</span>
+          </a>
+        </div>
+
+        <p class="hero__note" id="heroNote">
+          Tip: Use Chapters below to jump to exact moments in the YouTube player.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" tabindex="-1">
+    <!-- WATCH -->
+    <section id="watch" class="section" aria-label="Watch full podcast">
+      <div class="wrap">
+        <div class="section__header">
+          <h2 class="section__title" id="watchTitle">Full Podcast</h2>
+          <p class="section__subtitle" id="watchSubtitle">
+            Use the player below for full playback. Chapters can jump you to key moments.
+          </p>
+        </div>
+
+        <div class="player-card" role="region" aria-label="YouTube player">
+          <div class="player-card__top">
+            <div class="player-card__meta">
+              <p class="kicker" id="runtimeLabel">Runtime</p>
+              <p class="value" aria-label="Runtime value">56 minutes</p>
+            </div>
+
+            <div class="player-card__meta">
+              <p class="kicker" id="videoSourceLabel">Source</p>
+              <p class="value">
+                <a class="link" href="https://youtu.be/8XJr7USptS8" target="_blank" rel="noopener noreferrer" id="openOnYouTube">
+                  Open on YouTube
+                </a>
+              </p>
+            </div>
+
+            <div class="player-card__meta player-card__meta--right">
+              <button id="copyChapters" class="btn btn--ghost" type="button">
+                <span aria-hidden="true">⧉</span>
+                <span id="copyChaptersLabel">Copy Chapter List</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="player" aria-label="Embedded YouTube player">
+            <!-- Enable JS API so we can seek when user clicks episodes -->
+            <iframe
+              id="ytPlayer"
+              title="A Decade of Impact Podcast - YouTube player"
+              src="https://www.youtube.com/embed/8XJr7USptS8?enablejsapi=1&rel=0&modestbranding=1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="player-card__hint" id="playerHint" role="status" aria-live="polite">
+            Selecting a chapter below will jump the video to that timestamp.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EPISODES -->
+    <section id="episodes" class="section section--alt" aria-label="Podcast chapters">
+      <div class="wrap">
+        <div class="section__header">
+          <h2 class="section__title" id="episodesTitle">Chapters</h2>
+          <p class="section__subtitle" id="episodesSubtitle">
+            Netflix-style chapters: select one to jump to the exact timestamp.
+          </p>
+        </div>
+
+        <div class="rail" role="region" aria-label="Episode rail">
+          <div class="rail__controls">
+            <button id="railPrev" class="icon-btn" type="button" aria-label="Scroll chapters left">‹</button>
+            <button id="railNext" class="icon-btn" type="button" aria-label="Scroll chapters right">›</button>
+          </div>
+
+          <div id="episodesRail" class="rail__track" tabindex="0" role="list" aria-label="Chapters list">
+            <!-- Episode cards injected by script.js -->
+          </div>
+
+          <div class="rail__footer">
+            <p class="small" id="railHelp">
+              Keyboard: Tab to a chapter, then press Enter/Space to jump. Use Left/Right arrows to move between chapters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND / MERCH CALLOUT -->
+    <section class="section" aria-label="MDTP merch highlight">
+      <div class="wrap">
+        <div class="merch">
+          <img
+            class="merch__img"
+            src="merch/teaching-is-dope-tee.jpg"
+            alt="MDTP Teaching is DOPE t-shirt"
+            loading="lazy"
+          />
+          <div class="merch__copy">
+            <h2 class="section__title" id="merchTitle">Featured: Teaching is DOPE</h2>
+            <p class="section__subtitle" id="merchSubtitle">
+              Kashuna wears the MDTP “Teaching is DOPE” shirt—part of MDTP’s support campaigns.
+            </p>
+            <a class="btn btn--secondary" href="https://www.mdtpstore.org/product-page/teaching-is-dope-short-sleeve-tee" target="_blank" rel="noopener noreferrer" id="shopMerchBtn">
+              <span aria-hidden="true">🛍</span>
+              <span id="shopMerchLabel">View in MDTP Store</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div class="wrap footer__inner">
+        <p class="small" id="footerText">
+          © <span id="year"></span> Million Dollar Teacher Project — A Decade of Impact Podcast stakeholder review page.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
