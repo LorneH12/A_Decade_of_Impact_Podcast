@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>A Decade of Impact Podcast | MDTP Stakeholder Review</title>
+  <meta name="description" content="Stakeholder review page for A Decade of Impact Podcast — Million Dollar Teacher Project (MDTP)." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <div class="brand" aria-label="Site branding">
+        <img class="brand__logo" src="assets/mdtp-logo2.svg" alt="Million Dollar Teacher Project logo" />
+        <div class="brand__text">
+          <p class="brand__org">Million Dollar Teacher Project</p>
+          <p class="brand__sub" id="brandSub">Stakeholder Review</p>
+        </div>
+      </div>
+
+      <div class="topbar__actions" role="group" aria-label="Site controls">
+        <button id="langToggle" class="btn btn--ghost" type="button" aria-pressed="false">
+          <span class="btn__icon" aria-hidden="true">🌐</span>
+          <span id="langToggleLabel">EN → ES</span>
+        </button>
+
+        <button id="themeToggle" class="btn btn--ghost" type="button" aria-pressed="true">
+          <span class="btn__icon" aria-hidden="true">🌓</span>
+          <span id="themeToggleLabel">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- NOW PLAYING (sticky, always visible once a chapter is selected) -->
+  <section class="nowplaying" aria-label="Now playing" role="region">
+    <div class="wrap nowplaying__inner">
+      <div class="nowplaying__left">
+        <p class="nowplaying__kicker" id="npKicker">Now Playing</p>
+        <p class="nowplaying__title" id="npTitle">—</p>
+        <p class="nowplaying__meta" id="npMeta">Select a chapter to begin</p>
+      </div>
+
+      <div class="nowplaying__right" role="group" aria-label="Now playing controls">
+        <button id="npPrev" class="btn btn--ghost" type="button" disabled>
+          <span aria-hidden="true">⟵</span><span id="npPrevLabel">Prev</span>
+        </button>
+        <button id="npNext" class="btn btn--ghost" type="button" disabled>
+          <span id="npNextLabel">Next</span><span aria-hidden="true">⟶</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Featured media">
+    <div class="hero__media" aria-label="Hero slideshow">
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__slides" id="heroSlides" aria-live="polite"></div>
+
+      <div class="hero__controls">
+        <button id="heroPrev" class="icon-btn" type="button" aria-label="Previous slide">‹</button>
+        <button id="heroPlayPause" class="icon-btn" type="button" aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
+        <button id="heroNext" class="icon-btn" type="button" aria-label="Next slide">›</button>
+      </div>
+
+      <div class="hero__dots" id="heroDots" role="tablist" aria-label="Slide selection"></div>
+
+      <div class="hero__content">
+        <div class="hero__badges">
+          <img class="badge" src="assets/decade-logo.png" alt="A Decade of Impact logo" />
+          <img class="badge badge--alt" src="assets/decade-logo-2.png" alt="A Decade of Impact alternate logo" />
+        </div>
+
+        <h1 class="hero__title" id="pageTitle">A Decade of Impact: Education Conversation</h1>
+        <p class="hero__desc" id="pageDesc">
+          Host Kashuna Hopkins (MDTP) sits down with retired Arizona educators Bridget Larkin and Kimberly Fern to reflect on what has changed, what hasn’t, and what teachers need most.
+        </p>
+
+        <div class="hero__cta" role="group" aria-label="Primary actions">
+          <a class="btn btn--primary" href="#watch" id="jumpToWatch">
+            <span aria-hidden="true">▶</span>
+            <span id="watchFullBtn">Watch Full Podcast</span>
+          </a>
+
+          <a class="btn btn--secondary" href="#episodes" id="jumpToEpisodes">
+            <span aria-hidden="true">☰</span>
+            <span id="watchChaptersBtn">Watch by Chapters</span>
+          </a>
+        </div>
+
+        <p class="hero__note" id="heroNote">
+          Tip: Chapters below will play only their specific bite-sized segment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" tabindex="-1">
+    <!-- WATCH -->
+    <section id="watch" class="section" aria-label="Watch full podcast">
+      <div class="wrap">
+        <div class="section__header">
+          <h2 class="section__title" id="watchTitle">Full Podcast</h2>
+          <p class="section__subtitle" id="watchSubtitle">
+            Use the player below for full playback. Chapters will jump and play only their segment.
+          </p>
+        </div>
+
+        <div class="player-card" role="region" aria-label="YouTube player">
+          <div class="player-card__top">
+            <div class="player-card__meta">
+              <p class="kicker" id="runtimeLabel">Runtime</p>
+              <p class="value" aria-label="Runtime value">56 minutes</p>
+            </div>
+
+            <div class="player-card__meta">
+              <p class="kicker" id="videoSourceLabel">Source</p>
+              <p class="value">
+                <a class="link" href="https://youtu.be/8XJr7USptS8" target="_blank" rel="noopener noreferrer" id="openOnYouTube">
+                  Open on YouTube
+                </a>
+              </p>
+            </div>
+
+            <div class="player-card__meta player-card__meta--right">
+              <button id="copyChapters" class="btn btn--ghost" type="button">
+                <span aria-hidden="true">⧉</span>
+                <span id="copyChaptersLabel">Copy Chapter List</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="player" aria-label="Embedded YouTube player">
+            <div id="ytPlayer" class="yt-shell" aria-label="YouTube player container"></div>
+          </div>
+
+          <div class="player-card__hint" id="playerHint" role="status" aria-live="polite">
+            Select a chapter to play only that segment.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EPISODES -->
+    <section id="episodes" class="section section--alt" aria-label="Podcast chapters">
+      <div class="wrap">
+        <div class="section__header">
+          <h2 class="section__title" id="episodesTitle">Chapters</h2>
+          <p class="section__subtitle" id="episodesSubtitle">
+            Mobile: swipe through chapters. Desktop: grid view for fast selection.
+          </p>
+        </div>
+
+        <div class="rail" role="region" aria-label="Episode rail">
+          <div class="rail__controls" aria-label="Rail controls">
+            <button id="railPrev" class="icon-btn" type="button" aria-label="Scroll chapters left">‹</button>
+            <button id="railNext" class="icon-btn" type="button" aria-label="Scroll chapters right">›</button>
+          </div>
+
+          <div id="episodesRail" class="rail__track" tabindex="0" role="list" aria-label="Chapters list"></div>
+
+          <div class="rail__footer">
+            <p class="small" id="railHelp">
+              Keyboard: Tab to a chapter, Enter/Space plays that chapter only. Left/Right moves between chapters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section id="feedback" class="section" aria-label="Feedback and update requests">
+      <div class="wrap">
+        <div class="section__header">
+          <h2 class="section__title" id="feedbackTitle">Feedback</h2>
+          <p class="section__subtitle" id="feedbackSubtitle">
+            Log update requests tied to the chapter you’re reviewing. Saved locally so reviewers can track what they watched and what they requested.
+          </p>
+        </div>
+
+        <div class="feedback">
+          <form id="feedbackForm" class="feedback__form" aria-label="Submit feedback">
+            <div class="field">
+              <label for="fbEpisode" id="fbEpisodeLabel">Episode / Chapter</label>
+              <select id="fbEpisode" name="episode" required>
+                <option value="" selected disabled>Select a chapter</option>
+              </select>
+              <p class="help" id="fbEpisodeHelp">Tip: Choose the same chapter you just watched.</p>
+            </div>
+
+            <div class="field">
+              <label for="fbType" id="fbTypeLabel">Request Type</label>
+              <select id="fbType" name="type" required>
+                <option value="content">Content change</option>
+                <option value="timing">Timing / chapter boundary</option>
+                <option value="visual">Visual / design</option>
+                <option value="accessibility">Accessibility</option>
+                <option value="bug">Bug / playback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="fbNotes" id="fbNotesLabel">Notes</label>
+              <textarea id="fbNotes" name="notes" rows="5" required placeholder="What should be updated? Be specific."></textarea>
+            </div>
+
+            <div class="feedback__actions">
+              <button class="btn btn--primary" type="submit">
+                <span aria-hidden="true">➕</span>
+                <span id="fbSubmitLabel">Add Feedback</span>
+              </button>
+
+              <button id="exportFeedback" class="btn btn--secondary" type="button">
+                <span aria-hidden="true">⬇</span>
+                <span id="fbExportLabel">Export JSON</span>
+              </button>
+
+              <button id="clearFeedback" class="btn btn--ghost" type="button">
+                <span aria-hidden="true">🧹</span>
+                <span id="fbClearLabel">Clear (This Device)</span>
+              </button>
+            </div>
+          </form>
+
+          <div class="feedback__log" aria-label="Feedback log">
+            <div class="feedback__loghead">
+              <h3 class="subhead" id="fbLogTitle">Feedback Log</h3>
+              <p class="small" id="fbLogHint">Shows feedback entries tied to specific chapters.</p>
+            </div>
+            <div id="feedbackList" class="feedback__list" role="list" aria-label="Feedback entries"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MERCH -->
+    <section class="section" aria-label="MDTP merch highlight">
+      <div class="wrap">
+        <div class="merch">
+          <img
+            class="merch__img"
+            src="merch/teaching-is-dope-tee.jpg"
+            alt="MDTP Teaching is DOPE t-shirt"
+            loading="lazy"
+          />
+          <div class="merch__copy">
+            <h2 class="section__title" id="merchTitle">Featured: Teaching is DOPE</h2>
+            <p class="section__subtitle" id="merchSubtitle">
+              Kashuna wears the MDTP “Teaching is DOPE” shirt—part of MDTP’s support campaigns.
+            </p>
+            <a class="btn btn--secondary" href="https://www.mdtpstore.org/product-page/teaching-is-dope-short-sleeve-tee" target="_blank" rel="noopener noreferrer" id="shopMerchBtn">
+              <span aria-hidden="true">🛍</span>
+              <span id="shopMerchLabel">View in MDTP Store</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div class="wrap footer__inner">
+        <p class="small" id="footerText">
+          © <span id="year"></span> Million Dollar Teacher Project — A Decade of Impact Podcast stakeholder review page.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- YouTube Iframe API (required for chapter-limited playback) -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
